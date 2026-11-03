@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Propiedades CSS</title>
+
+    <style>
+        /* Estilos generales de la página */
+        body {
+            background-color: #d4ded3;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            color: #3b4d3f;
+        }
+
+        /* Contenedor principal estilo tarjeta flotante */
+        .pagina {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #e6ede5;
+            border-radius: 28px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Encabezado */
+        .header-seccion {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .logo-placeholder {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 15px;
+            background-color: #a4c4ad;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        h1 {
+            color: #2b3a2e;
+            font-size: 36px;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        /* Badges / Etiquetas superiores */
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .badge {
+            background-color: #a4c4ad;
+            color: #263629;
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* Tarjetas de cada propiedad */
+        .propiedad {
+            background-color: #f3f7f2;
+            margin-bottom: 20px;
+            padding: 24px;
+            border-radius: 20px;
+            border: 1px solid #c2d6c6;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            transition: transform 0.2s ease;
+        }
+
+        .propiedad:hover {
+            transform: translateY(-2px);
+        }
+
+        .propiedad h2 {
+            color: #2d3e30;
+            font-size: 22px;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .propiedad p {
+            margin: 5px 0 5px 0;
+            font-size: 15px;
+            color: #4a5e4e;
+            line-height: 1.5;
+        }
+
+        .tags-propiedad {
+            display: flex;
+            gap: 8px;
+        }
+
+        /* Estilo para los bloques de ejemplo de código */
+        .ejemplo-codigo {
+            background-color: #2b3a2e;
+            color: #d4ded3;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="pagina">
+
+        <!-- Encabezado -->
+        <div class="header-seccion">
+            <div class="logo-placeholder">🌿</div>
+            <h1>10 Propiedades de CSS</h1>
+            <div class="tags-container">
+                <span class="badge">WIDTH</span>
+                <span class="badge">HEIGHT</span>
+                <span class="badge">BORDER</span>
+                <span class="badge">COLOR</span>
+                <span class="badge">PADDING</span>
+            </div>
+        </div>
+
+        <!-- Propiedad 1 -->
+        <div class="propiedad">
+            <div class="tags-propiedad"><span class="badge">COLOR</span></div>
+            <h2>1. color</h2>
+            <p>Cambia el color del texto.</p>
+            <div class="ejemplo-codigo">color: #2e6f40;</div>
+        </div>
+
+        <!-- Propiedad 2 -->
+        <div class="propiedad">
+            <div class="tags-propiedad"><span class="badge">BACKGROUND-COLOR</span></div>
+            <h2>2. background-color</h2>
+            <p>Cambia el color de fondo de un elemento.</p>
+            <div class="ejemplo-codigo">background-color: #e6ede5;</div>
+        </div>
+
+        <!-- Propiedad 3 -->
+        <div class="propiedad">
+            <div class="tags-propiedad"><span class="badge">FONT-SIZE</span></div>
+            <h2>3. font-size</h2>
+            <p>Cambia el tamaño de la letra.</p>
+            <div class="ejemplo-codigo">font-size: 18px;</div>
+        </div>
+
+        <!-- Propiedad 4 -->
+        <div class="propiedad">
+            <div class="tags-propiedad"><span class="badge">FONT-FAMILY</span></div>
+            <h2>4. font-family</h2>
+            <p>Cambia la tipografía o fuente del texto.</p>
+            <div class="ejemplo-codigo">font-family: 'Segoe UI', sans-serif;</div>
+        </div>
+
+        <!-- Propiedad 5 -->
+        <div class="propiedad">
+            <div class="tags-propiedad"><span class="badge">TEXT-ALIGN</span></div>
+            <h2>5. text-align</h2>
+            <p>Alinea horizontalmente el texto (izquierda, centro, derecha).</p>
+            <div class="ejemplo-codigo">text-align: center;</div>
+        </div>
+
+        <!-- Propiedad 6 -->
+        <div class="propiedad">
+            <div class="tags-propiedad"><span class="badge">MARGIN</span></div>
+            <h2>6. margin</h2>
+            <p>Establece el espacio exterior alrededor de un elemento.</p>
+            <div class="ejemplo-codigo">margin: 20px auto;</div>
+        </div>
+
+        <!-- Propiedad 7 -->
+        <div class="propiedad">
+            <div class="tags-propiedad"><span class="badge">PADDING</span></div>
+            <h2>7. padding</h2>
+            <p>Establece el espacio interior entre el contenido y su borde.</p>
+            <div class="ejemplo-codigo">padding: 15px 25px;</div>
+        </div>
+
+        <!-- Propiedad 8 -->
+        <div class="propiedad">
+            <div class="tags-propiedad"><span class="badge">BORDER</span></div>
+            <h2>8. border</h2>
+            <p>Agrega y define un borde alrededor del elemento.</p>
+            <div class="ejemplo-codigo">border: 2px solid #a4c4ad;</div>
+        </div>
+
+        <!-- Propiedad 9 -->
+        <div class="propiedad">
+            <div class="tags-propiedad"><span class="badge">WIDTH</span></div>
+            <h2>9. width</h2>
+            <p>Define el ancho de un elemento.</p>
+            <div class="ejemplo-codigo">width: 100%;</div>
+        </div>
+
+        <!-- Propiedad 10 -->
+        <div class="propiedad">
+            <div class="tags-propiedad"><span class="badge">HEIGHT</span></div>
+            <h2>10. height</h2>
+            <p>Define la altura de un elemento.</p>
+            <div class="ejemplo-codigo">height: 50px;</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
